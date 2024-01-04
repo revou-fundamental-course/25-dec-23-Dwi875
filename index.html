@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Bagian Menghitung Luas -->
+        <div class="calculation-box" id="luasBox">
+            <h2>Menghitung Luas</h2>
+            <img src="gambar/60874cf8-10ad-4538-849a-28261e4fe533.jpg" alt="Luas Segitiga" width="400">
+            <div class="input-section">
+                <label for="alas">Alas:</label>
+                <input type="number" id="alas" placeholder="Masukkan alas">
+                
+                <label for="tinggi">Tinggi:</label>
+                <input type="number" id="tinggi" placeholder="Masukkan tinggi">
+                
+                <button onclick="hitungLuas()">Hitung Luas</button>
+                <button onclick="clearResult()">Clear</button>
+            </div>
+            
+            <div class="result-section">
+                <h3>Hasil Luas</h3>
+                <p id="luasResult">Luas: -</p>
+            </div>
+        </div>
+
+        <!-- Bagian Menghitung Keliling -->
+        <div class="calculation-box" id="kelilingBox">
+            <h2>Menghitung Keliling</h2>
+            <img src="gambar/b8929a7e-ba41-48f8-b84b-a5271fdc0654.jpg" alt="Keliling Segitiga" width="400">
+            <div class="input-section">
+                <label for="sisi1">Sisi 1:</label>
+                <input type="number" id="sisi1" placeholder="Masukkan sisi 1">
+                
+                <label for="sisi2">Sisi 2:</label>
+                <input type="number" id="sisi2" placeholder="Masukkan sisi 2">
+                
+                <label for="sisi3">Sisi 3:</label>
+                <input type="number" id="sisi3" placeholder="Masukkan sisi 3">
+                
+                <button onclick="hitungKeliling()">Hitung Keliling</button>
+                <button onclick="clearResult()">Clear</button>
+            </div>
+            
+            <div class="result-section">
+                <h3>Hasil Keliling</h3>
+                <p id="kelilingResult">Keliling: -</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

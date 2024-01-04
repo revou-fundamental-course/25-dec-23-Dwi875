@@ -1,0 +1,56 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.calculation-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%; /* 45% agar dua kotak muat dalam container */
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 10px); /* Agar input lebar 100% dan ada sedikit ruang di sekitarnya */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Menambahkan transisi agar perubahan warna lebih halus */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result-section h3 {
+  color: #333;
+}
